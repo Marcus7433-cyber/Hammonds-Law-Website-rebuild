@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Hammonds Law Office PLLC — Personal Injury, Criminal Law, Estate Planning &amp; Family Law in Hurricane, WV. Serving Putnam, Kanawha, Cabell &amp; Mason counties. (304) 759-8880."/>
+<title>Hammonds Law Office PLLC | Hurricane, West Virginia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --burg:    #3D1018;
+  --burg-m:  #541828;
+  --burg-d:  #250A10;
+  --brass:   #B5924A;
+  --brass-l: #D4B06E;
+  --brass-p: #EDD9A3;
+  --parch:   #F6F1E8;
+  --cream:   #FDFAF4;
+  --white:   #FFFFFF;
+  --char:    #1A1A1A;
+  --text:    #2B1F14;
+  --text-m:  #5C4F3C;
+  --text-l:  #8C7C64;
+  --bdr:     #DDD0B8;
+  --red:     #B91C1C;
+  --fd: 'Cormorant Garamond',Georgia,serif;
+  --fb: 'DM Sans',system-ui,sans-serif;
+  --sh: 0 4px 24px rgba(61,16,24,.1);
+  --sh-lg: 0 10px 48px rgba(61,16,24,.2);
+  --tr: all .28s ease;
+  --mw: 1140px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);color:var(--text);background:var(--cream);line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;font-family:var(--fb)}
+h1,h2,h3,h4{font-family:var(--fd);line-height:1.2}
+h1{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:700}
+h2{font-size:clamp(1.7rem,3vw,2.6rem);font-weight:700;color:var(--burg)}
+h3{font-size:clamp(1.2rem,2.5vw,1.65rem);font-weight:600;color:var(--burg)}
+h4{font-size:1.1rem;font-weight:600;color:var(--burg)}
+p{margin-bottom:1rem}
+
+/* Layout */
+.wrap{max-width:var(--mw);margin:0 auto;padding:0 24px}
+.sec{padding:84px 0}
+.sec-sm{padding:48px 0}
+.tc{text-align:center}
+
+/* Eyebrow */
+.eye{font-family:var(--fb);font-size:.7rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:10px}
+.eye-l{color:var(--brass-l)}
+
+/* Rule */
+.rl{width:48px;height:3px;background:var(--brass);margin:12px auto 24px}
+.rl-left{margin-left:0}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:7px;padding:13px 30px;font-family:var(--fb);font-size:.85rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;border:2px solid transparent;border-radius:3px;transition:var(--tr);cursor:pointer;white-space:nowrap}
+.btn-gold{background:var(--brass);color:var(--burg-d);border-color:var(--brass)}
+.btn-gold:hover{background:var(--brass-l);border-color:var(--brass-l);transform:translateY(-2px);box-shadow:0 6px 20px rgba(181,146,74,.4)}
+.btn-out{background:transparent;color:var(--white);border-color:rgba(255,255,255,.55)}
+.btn-out:hover{background:var(--white);color:var(--burg);transform:translateY(-2px)}
+.btn-out-b{background:transparent;color:var(--brass);border-color:var(--brass)}
+.btn-out-b:hover{background:var(--brass);color:var(--burg-d);transform:translateY(-2px)}
+.btn-dark{background:var(--burg);color:var(--cream);border-color:var(--burg)}
+.btn-dark:hover{background:var(--burg-m);transform:translateY(-2px);box-shadow:0 6px 20px rgba(61,16,24,.35)}
+.btn-lg{padding:16px 40px;font-size:.92rem}
+
+/* Page fade */
+#app{opacity:1;transition:opacity .2s ease}
+#app.out{opacity:0}
+
+/* NAV */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .35s,box-shadow .35s}
+.hdr.scrolled{background:var(--burg-d);box-shadow:0 2px 20px rgba(0,0,0,.4)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:12px;cursor:pointer}
+.brand-seal{width:44px;height:44px;border-radius:50%;background:var(--brass);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:2px solid rgba(255,255,255,.2);flex-shrink:0}
+.brand-name{font-family:var(--fd);font-size:1.2rem;font-weight:700;color:var(--white);line-height:1.15}
+.brand-sub{font-size:.58rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--brass-l);display:block}
+.nav-links{display:flex;align-items:center;gap:26px;list-style:none}
+.nav-links a{color:rgba(255,255,255,.82);font-size:.8rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;transition:color .2s;position:relative;padding-bottom:3px}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--brass);transition:width .22s}
+.nav-links a:hover,.nav-links a.on{color:var(--brass-l)}
+.nav-links a:hover::after,.nav-links a.on::after{width:100%}
+.nav-btn{margin-left:6px;padding:9px 20px;font-size:.76rem}
+.hbg{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:4px}
+.hbg span{display:block;width:23px;height:2px;background:var(--white);border-radius:2px;transition:var(--tr)}
+.hbg.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hbg.open span:nth-child(2){opacity:0}
+.hbg.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mob-nav{display:none;position:fixed;top:76px;left:0;right:0;background:var(--burg-d);padding:20px 24px;z-index:999;border-top:1px solid rgba(255,255,255,.1)}
+.mob-nav.open{display:block}
+.mob-nav ul{list-style:none}
+.mob-nav ul li{border-bottom:1px solid rgba(255,255,255,.07)}
+.mob-nav ul a{display:block;padding:14px 0;color:var(--white);font-weight:500;font-size:.88rem;letter-spacing:.05em;text-transform:uppercase;cursor:pointer}
+.mob-cta{margin-top:16px;display:flex;flex-direction:column;gap:9px}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:var(--burg-d)}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(150deg,rgba(37,10,16,.97) 0%,rgba(61,16,24,.85) 55%,rgba(37,10,16,.96) 100%)}
+.hero-tex{position:absolute;inset:0;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M0 0h60v60H0z' fill='none'/%3E%3Cpath d='M30 0v60M0 30h60' stroke='%23B5924A' stroke-width='.5'/%3E%3Ccircle cx='30' cy='30' r='12' stroke='%23B5924A' stroke-width='.4' fill='none'/%3E%3C/svg%3E")}
+.hero-glow{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);width:700px;height:700px;background:radial-gradient(ellipse,rgba(181,146,74,.09) 0%,transparent 65%);pointer-events:none}
+.hero-ring{position:absolute;right:-80px;bottom:-80px;width:550px;height:550px;border-radius:50%;border:1px solid rgba(181,146,74,.1)}
+.hero-ring::before{content:'';position:absolute;inset:50px;border-radius:50%;border:1px solid rgba(181,146,74,.06)}
+.hero-in{position:relative;z-index:2;max-width:840px;text-align:center;padding:120px 24px 80px;animation:hIn 1s ease both}
+@keyframes hIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(181,146,74,.15);border:1px solid rgba(181,146,74,.38);color:var(--brass-l);font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:7px 18px;border-radius:100px;margin-bottom:24px;animation:hIn 1s .1s both}
+.hero h1{color:var(--white);margin-bottom:10px;animation:hIn 1s .2s both}
+.hero-tag{font-family:var(--fd);font-size:clamp(1.05rem,2vw,1.3rem);color:var(--brass-l);font-style:italic;margin-bottom:26px;animation:hIn 1s .3s both}
+.hero-sub{font-size:.97rem;color:rgba(255,255,255,.68);max-width:580px;margin:0 auto 38px;animation:hIn 1s .4s both;line-height:1.8}
+.hero-acts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;animation:hIn 1s .5s both}
+.hero-stats{margin-top:60px;display:flex;justify-content:center;gap:44px;flex-wrap:wrap;animation:hIn 1s .65s both;padding-top:36px;border-top:1px solid rgba(181,146,74,.2)}
+.hst-n{font-family:var(--fd);font-size:2rem;font-weight:700;color:var(--brass);line-height:1}
+.hst-l{font-size:.67rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:5px}
+.hero-scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.28);font-size:.67rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:5px;animation:bv 2s infinite}
+@keyframes bv{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(5px)}}
+
+/* HONOR STRIP */
+.hs{background:var(--burg);padding:16px 0}
+.hs-in{display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap}
+.h-item{display:flex;align-items:center;gap:8px;color:var(--brass-p);font-size:.8rem;font-weight:500}
+.h-sep{width:1px;height:18px;background:rgba(181,146,74,.3)}
+
+/* SERVICE AREA BAR */
+.sab{background:var(--brass);padding:12px 0;text-align:center}
+.sab p{font-size:.73rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--burg-d);margin:0}
+
+/* ABOUT INTRO */
+.intro-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center}
+.atty-card{background:var(--burg-d);border-radius:12px;overflow:hidden;box-shadow:var(--sh-lg)}
+.atty-photo{height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--burg-m);font-size:5rem;color:var(--brass-l);border-bottom:3px solid var(--brass)}
+.atty-photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.atty-info{padding:26px}
+.atty-name{font-family:var(--fd);font-size:1.5rem;font-weight:700;color:var(--white)}
+.atty-role{font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin-bottom:16px;display:block}
+.atty-facts{display:flex;flex-direction:column;gap:7px}
+.af{display:flex;align-items:flex-start;gap:9px;font-size:.83rem;color:rgba(255,255,255,.68)}
+.af-ic{color:var(--brass);flex-shrink:0;margin-top:2px}
+
+/* BLOCKQUOTE */
+.bq-box{background:var(--burg);padding:28px 32px;border-radius:8px;margin-top:26px;position:relative;overflow:hidden}
+.bq-box::before{content:'\201C';font-family:var(--fd);font-size:7rem;color:rgba(181,146,74,.12);position:absolute;top:-14px;left:14px;line-height:1}
+.bq-text{font-family:var(--fd);font-size:1rem;font-style:italic;color:var(--cream);margin:0;position:relative;z-index:1;padding-left:6px}
+.bq-attr{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brass-l);margin-top:10px;display:block;position:relative;z-index:1}
+
+/* PRACTICE CARDS */
+.pc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:22px;margin-top:46px}
+.pc{border-radius:12px;overflow:hidden;box-shadow:var(--sh);transition:var(--tr);background:var(--white);border:1px solid var(--bdr)}
+.pc:hover{transform:translateY(-6px);box-shadow:var(--sh-lg)}
+.pc-hd{background:var(--burg);padding:28px 24px 22px;position:relative;overflow:hidden}
+.pc-hd::after{content:'';position:absolute;top:-35px;right:-35px;width:120px;height:120px;border-radius:50%;background:rgba(181,146,74,.08)}
+.pc-ic{font-size:2.1rem;margin-bottom:10px;position:relative;z-index:1}
+.pc-hd h3{color:var(--white);font-size:1.3rem;position:relative;z-index:1}
+.pc-bd{padding:20px 24px 26px}
+.pc-bd p{font-size:.86rem;color:var(--text-m);margin-bottom:14px;line-height:1.7}
+.pc-ul{list-style:none;margin-bottom:20px}
+.pc-ul li{font-size:.82rem;padding:5px 0;border-bottom:1px solid var(--bdr);display:flex;align-items:center;gap:7px;color:var(--text)}
+.pc-ul li::before{content:'›';color:var(--brass);font-weight:700}
+
+/* AWARDS */
+.aw-sec{background:var(--burg-d)}
+.aw-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:16px;margin-top:44px}
+.aw{background:rgba(255,255,255,.04);border:1px solid rgba(181,146,74,.22);border-radius:8px;padding:22px 18px;text-align:center;transition:var(--tr)}
+.aw:hover{background:rgba(181,146,74,.09);border-color:var(--brass)}
+.aw-yr{font-family:var(--fd);font-size:1.75rem;font-weight:700;color:var(--brass);line-height:1}
+.aw-title{font-size:.76rem;font-weight:700;color:var(--white);margin-top:7px;line-height:1.4}
+.aw-org{font-size:.67rem;color:rgba(255,255,255,.4);margin-top:3px}
+
+/* WHY */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:48px}
+.why-list{display:flex;flex-direction:column;gap:22px}
+.why-item{display:flex;gap:16px}
+.why-num{font-family:var(--fd);font-size:2.2rem;font-weight:700;color:var(--brass-p);line-height:1;flex-shrink:0;width:44px}
+.why-body h4{margin-bottom:4px;font-size:1rem}
+.why-body p{color:var(--text-m);font-size:.86rem;margin:0;line-height:1.65}
+.why-box{background:var(--burg);border-radius:12px;padding:34px;text-align:center}
+.why-box h3{color:var(--white);margin-bottom:12px}
+.why-box p{color:rgba(255,255,255,.62);font-size:.88rem;margin-bottom:22px}
+.why-box .ph{font-family:var(--fd);font-size:1.9rem;font-weight:700;color:var(--brass);display:block;margin-bottom:18px}
+
+/* TESTIMONIALS */
+.t-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));gap:22px;margin-top:46px}
+.tc-card{background:var(--white);border-radius:12px;padding:30px 26px;box-shadow:var(--sh);position:relative;transition:var(--tr);border:1px solid var(--bdr)}
+.tc-card:hover{transform:translateY(-4px);box-shadow:var(--sh-lg)}
+.tc-qm{position:absolute;top:16px;left:18px;font-family:var(--fd);font-size:4rem;color:var(--brass);opacity:.14;line-height:1}
+.tc-stars{color:var(--brass);margin-bottom:12px;font-size:.9rem}
+.tc-text{font-size:.9rem;font-style:italic;color:var(--text-m);line-height:1.75;margin-bottom:20px}
+.tc-rev{display:flex;align-items:center;gap:11px}
+.tc-av{width:38px;height:38px;border-radius:50%;background:var(--burg);display:flex;align-items:center;justify-content:center;color:var(--brass-l);font-weight:700;font-size:.9rem;flex-shrink:0}
+.tc-name{font-weight:700;font-size:.85rem;color:var(--burg)}
+.g-badge{display:inline-flex;align-items:center;gap:4px;background:var(--parch);border:1px solid var(--bdr);padding:2px 9px;border-radius:100px;font-size:.65rem;font-weight:700;color:var(--text-l);margin-top:3px}
+
+/* FAQ */
+.faq-list{max-width:720px;margin:46px auto 0}
+.faq-item{background:var(--white);border-radius:8px;margin-bottom:9px;box-shadow:var(--sh);border:1px solid var(--bdr)}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;padding:19px 24px;background:none;border:none;text-align:left;font-family:var(--fb);font-size:.92rem;font-weight:600;color:var(--burg);cursor:pointer;gap:12px;transition:background .2s}
+.faq-q:hover{background:var(--parch)}
+.faq-q.on{color:var(--burg-m)}
+.faq-ic{width:24px;height:24px;border-radius:50%;background:var(--burg);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;transition:var(--tr)}
+.faq-q.on .faq-ic{background:var(--brass);color:var(--burg-d);transform:rotate(45deg)}
+.faq-ans{display:none;padding:0 24px 18px;font-size:.88rem;color:var(--text-m);line-height:1.75}
+.faq-ans.open{display:block}
+
+/* CONTACT */
+.cg{display:grid;grid-template-columns:1.2fr 1fr;gap:52px;margin-top:44px;align-items:start}
+.cform{background:var(--cream);border-radius:12px;padding:36px}
+.cform h3{margin-bottom:5px;color:var(--burg);font-size:1.35rem}
+.cform-sub{font-size:.82rem;color:var(--text-m);margin-bottom:24px;padding-bottom:16px;border-bottom:2px solid var(--brass)}
+.fg{margin-bottom:16px}
+.fg label{display:block;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--burg);margin-bottom:5px}
+.fg input,.fg select,.fg textarea{width:100%;padding:11px 13px;border:2px solid var(--bdr);border-radius:3px;font-family:var(--fb);font-size:.88rem;color:var(--char);background:var(--white);transition:border-color .22s;outline:none}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--brass)}
+.fg input.err,.fg select.err,.fg textarea.err{border-color:var(--red)}
+.ferr{display:none;color:var(--red);font-size:.72rem;margin-top:3px;font-weight:700}
+.fg textarea{resize:vertical;min-height:98px}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.fsub{width:100%;justify-content:center}
+.fnote{font-size:.7rem;color:var(--text-l);text-align:center;margin-top:9px}
+.form-ok{display:none;text-align:center;padding:28px}
+.form-ok .ok-ic{font-size:2.5rem;margin-bottom:10px}
+.ci h3{color:var(--white);margin-bottom:26px}
+.ci-item{display:flex;gap:13px;align-items:flex-start;margin-bottom:23px}
+.ci-ic{width:40px;height:40px;background:rgba(181,146,74,.15);border:1px solid rgba(181,146,74,.28);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:1.05rem;flex-shrink:0}
+.ci-lbl{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brass);margin-bottom:3px}
+.ci-val{font-size:.88rem;color:var(--white)}
+.ci-val a{color:var(--white)}
+.ci-val a:hover{color:var(--brass-l)}
+.rates-box{background:rgba(255,255,255,.05);border:1px solid rgba(181,146,74,.18);border-radius:8px;padding:20px;margin-top:26px}
+.rates-box h4{color:var(--brass);margin-bottom:10px;font-size:.95rem}
+.rates-box p{color:rgba(255,255,255,.62);font-size:.8rem;line-height:1.7;margin:0}
+
+/* PAGE HERO */
+.pg-hero{background:var(--burg-d);padding:136px 0 70px;position:relative;overflow:hidden}
+.pg-hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--brass),transparent)}
+.pg-cnt{max-width:640px}
+.pg-hero h1{color:var(--white);font-size:clamp(2rem,4.5vw,3.3rem);margin-bottom:12px}
+.pg-hero .lead{color:rgba(255,255,255,.65);font-size:1rem;line-height:1.78}
+.bc{display:flex;align-items:center;gap:7px;margin-bottom:20px;font-size:.76rem}
+.bc a{color:var(--brass-l);cursor:pointer}
+.bc span{color:rgba(255,255,255,.28)}
+.bc .cur{color:rgba(255,255,255,.55)}
+
+/* FINAL CTA */
+.fcta{background:linear-gradient(135deg,var(--burg-d) 0%,var(--burg) 100%);padding:76px 0;text-align:center;position:relative;overflow:hidden}
+.fcta::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(181,146,74,.07) 0%,transparent 68%)}
+.fcta h2{color:var(--white);margin-bottom:12px}
+.fcta p{color:rgba(255,255,255,.62);max-width:500px;margin:0 auto 32px}
+.fcta .acts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.tr-row{display:flex;justify-content:center;gap:28px;margin-top:40px;flex-wrap:wrap}
+.tr-it{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.48);font-size:.8rem;font-weight:500}
+.tr-ic{color:var(--brass);font-size:.95rem}
+
+/* FOOTER */
+.ft{background:#0C0408;color:rgba(255,255,255,.5);padding:52px 0 0}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px}
+.ft-brand p{font-size:.8rem;line-height:1.7;margin-top:12px}
+.ft-logo{display:flex;align-items:center;gap:9px}
+.ft-col h5{font-family:var(--fb);font-size:.67rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin-bottom:14px}
+.ft-col ul{list-style:none}
+.ft-col ul li{margin-bottom:8px}
+.ft-col ul a{font-size:.8rem;color:rgba(255,255,255,.46);transition:color .2s;cursor:pointer}
+.ft-col ul a:hover{color:var(--brass)}
+.ft-bot{border-top:1px solid rgba(255,255,255,.06);padding:16px 0;display:flex;align-items:center;justify-content:space-between;font-size:.73rem;flex-wrap:wrap;gap:9px}
+.ft-disc{background:rgba(255,255,255,.025);border-top:1px solid rgba(255,255,255,.05);padding:16px 0;font-size:.7rem;text-align:center;color:rgba(255,255,255,.28);line-height:1.6}
+
+/* INNER PAGES */
+.two-col{display:grid;grid-template-columns:2fr 1fr;gap:46px;align-items:start}
+.psb{background:var(--parch);border-radius:12px;padding:24px;border:1px solid var(--bdr);position:sticky;top:96px}
+.psb h4{margin-bottom:13px;font-size:.95rem}
+.psb ul{list-style:none}
+.psb ul li{border-bottom:1px solid var(--bdr)}
+.psb ul a{display:block;padding:9px 0;font-size:.86rem;color:var(--text);font-weight:600;transition:color .2s;cursor:pointer}
+.psb ul a:hover,.psb ul a.on{color:var(--brass)}
+.psb-cta{background:var(--burg);border-radius:8px;padding:20px;margin-top:16px;text-align:center}
+.psb-cta h4{color:var(--white);margin-bottom:6px;font-size:.9rem}
+.psb-cta p{font-size:.78rem;color:rgba(255,255,255,.58);margin-bottom:13px}
+.cs{color:var(--text-m);line-height:1.8}
+.cs h3{margin:30px 0 11px;color:var(--burg)}
+.cs p{margin-bottom:15px}
+.cs ul{margin:0 0 17px 18px;line-height:1.8}
+.hl{background:var(--burg);color:var(--cream);padding:24px 28px;border-radius:8px;margin:28px 0;border-left:4px solid var(--brass)}
+.hl h4{color:var(--cream);margin-bottom:7px}
+.hl p{color:rgba(255,255,255,.68);margin:0;font-size:.88rem}
+.hl-light{background:var(--parch);border-left-color:var(--brass)}
+.hl-light h4{color:var(--burg)}
+.hl-light p,.hl-light ul{color:var(--text-m)}
+
+/* VALUES */
+.val-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:42px}
+.val-card{background:var(--white);border-radius:8px;padding:26px 22px;border-left:4px solid var(--brass);box-shadow:var(--sh);transition:var(--tr)}
+.val-card:hover{transform:translateY(-4px);box-shadow:var(--sh-lg)}
+.val-ic{font-size:1.7rem;margin-bottom:11px}
+.val-card p{font-size:.83rem;color:var(--text-m);margin:0}
+
+/* EDU */
+.edu-list{list-style:none;display:flex;flex-direction:column;gap:13px}
+.edu-item{display:flex;gap:13px;align-items:flex-start}
+.edu-ic{width:34px;height:34px;background:var(--brass);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0;color:var(--burg-d)}
+.edu-b h5{font-size:.87rem;font-weight:700;color:var(--burg);margin-bottom:2px}
+.edu-b span{font-size:.76rem;color:var(--text-l)}
+
+/* SCARS */
+.scars{background:var(--burg);border-radius:8px;padding:26px}
+.scars h4{color:var(--white);margin-bottom:14px}
+.scars-items{display:flex;flex-direction:column;gap:9px}
+.scars-row{display:flex;align-items:flex-start;gap:11px}
+.scars-let{width:30px;height:30px;border-radius:50%;background:var(--brass);color:var(--burg-d);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.82rem;flex-shrink:0}
+.scars-txt{font-size:.84rem;color:rgba(255,255,255,.76);padding-top:4px}
+
+/* STICKY */
+.sf{position:fixed;bottom:22px;right:22px;z-index:900;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.sf-btn{display:flex;align-items:center;gap:8px;padding:11px 19px;border-radius:100px;font-family:var(--fb);font-size:.8rem;font-weight:700;border:none;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:var(--tr);text-decoration:none}
+.sf-call{background:var(--brass);color:var(--burg-d)}
+.sf-con{background:var(--burg-d);color:var(--white);border:2px solid var(--brass)}
+.sf-btn:hover{transform:translateY(-3px);box-shadow:0 7px 24px rgba(0,0,0,.4)}
+.mob-bar{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--brass);color:var(--burg-d);text-align:center;padding:14px;font-weight:900;font-size:.92rem;z-index:1100;text-decoration:none;cursor:pointer}
+
+/* ANIMATIONS */
+.fin{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.fin.vis{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.38s}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .ft-grid{grid-template-columns:1fr 1fr}
+  .intro-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .two-col{grid-template-columns:1fr}
+  .cg{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .sec{padding:58px 0}
+  .nav-links,.nav-btn{display:none}
+  .hbg{display:flex}
+  .ft-grid{grid-template-columns:1fr}
+  .fr{grid-template-columns:1fr}
+  .hero-stats{gap:26px}
+  .h-sep{display:none}
+  .sf{display:none}
+  .mob-bar{display:block}
+  .ft-bot{justify-content:center;text-align:center}
+}
+@media(max-width:480px){
+  .hero-acts{flex-direction:column;align-items:center}
+  .hero-acts .btn{width:100%;justify-content:center}
+  .cform{padding:22px 16px}
+  .acts{flex-direction:column;align-items:center}
+  .acts .btn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <nav class="nav">
+      <div class="brand" onclick="go('home')">
+        <div class="brand-seal">⚖</div>
+        <div>
+          <div class="brand-name">Hammonds Law</div>
+          <span class="brand-sub">Office PLLC</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a onclick="go('home')">Home</a></li>
+        <li><a onclick="go('about')">About</a></li>
+        <li><a onclick="go('testimonials')">Testimonials</a></li>
+        <li><a onclick="go('practice-areas')">Practice Areas</a></li>
+        <li><a onclick="go('contact')">Contact</a></li>
+      </ul>
+      <button class="btn btn-gold nav-btn" onclick="go('contact')">Get a Consultation</button>
+      <button class="hbg" id="hbg" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<div class="mob-nav" id="mob-nav">
+  <ul>
+    <li><a onclick="go('home')">Home</a></li>
+    <li><a onclick="go('about')">About</a></li>
+    <li><a onclick="go('testimonials')">Testimonials</a></li>
+    <li><a onclick="go('practice-areas')">Practice Areas</a></li>
+    <li><a onclick="go('contact')">Contact</a></li>
+  </ul>
+  <div class="mob-cta">
+    <button class="btn btn-gold" onclick="go('contact')">Get a Consultation</button>
+    <a href="tel:+13047598880" class="btn btn-out">(304) 759-8880</a>
+  </div>
+</div>
+
+<div id="app"></div>
+
+<div class="sf">
+  <a href="tel:+13047598880" class="sf-btn sf-call">📞 (304) 759-8880</a>
+  <button class="sf-btn sf-con" onclick="go('contact')">Get a Consultation</button>
+</div>
+<a href="tel:+13047598880" class="mob-bar">📞 Call Now — (304) 759-8880</a>
+
+<script>
+// ── CONSTANTS ─────────────────────────────────────────────
+const PH = '(304) 759-8880';
+const PH_H = 'tel:+13047598880';
+const PH2 = '(304) 964-3437';
+const EMAIL = 'info@hammonds.law';
+const ADDR = '421 Midland Trail, Hurricane, WV 25526';
+
+// ── SHARED BUILDERS ───────────────────────────────────────
+function honorsStrip() {
+  return `
+<div class="hs">
+  <div class="hs-in">
+    <div class="h-item">⭐ National Trial Lawyers Top 40 Under 40</div>
+    <div class="h-sep"></div>
+    <div class="h-item">⭐ NAOPIA Top 10 Under 40</div>
+    <div class="h-sep"></div>
+    <div class="h-item">⭐ NAFLA Top 10 Attorney</div>
+    <div class="h-sep"></div>
+    <div class="h-item">🎖 Iraq War Veteran · U.S. Army</div>
+  </div>
+</div>
+<div class="sab">
+  <p>PROUDLY SERVING PUTNAM · KANAWHA · CABELL · MASON COUNTIES, WEST VIRGINIA</p>
+</div>`;
+}
+
+function footer() {
+  return `
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <div class="ft-logo">
+          <div class="brand-seal" style="width:34px;height:34px;font-size:.85rem;">⚖</div>
+          <div>
+            <div style="font-family:var(--fd);font-size:1rem;font-weight:700;color:white;">Hammonds Law</div>
+            <div style="font-size:.56rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);">Office PLLC</div>
+          </div>
+        </div>
+        <p>Passion. Experience. Diligence.<br>Serving Putnam, Kanawha, Cabell &amp; Mason counties, West Virginia since 2021.</p>
+      </div>
+      <div class="ft-col"><h5>Practice Areas</h5><ul>
+        <li><a onclick="go('personal-injury')">Personal Injury</a></li>
+        <li><a onclick="go('criminal-law')">Criminal Law</a></li>
+        <li><a onclick="go('estate-planning')">Estate Planning</a></li>
+        <li><a onclick="go('family-law')">Family Law</a></li>
+      </ul></div>
+      <div class="ft-col"><h5>Firm</h5><ul>
+        <li><a onclick="go('about')">About Daryl Hammonds</a></li>
+        <li><a onclick="go('testimonials')">Client Reviews</a></li>
+        <li><a onclick="go('practice-areas')">All Practice Areas</a></li>
+        <li><a onclick="go('contact')">Get a Consultation</a></li>
+      </ul></div>
+      <div class="ft-col"><h5>Contact</h5><ul>
+        <li><a href="${PH_H}">${PH}</a></li>
+        <li><a href="tel:+13049643437">${PH2}</a></li>
+        <li><a href="mailto:${EMAIL}">${EMAIL}</a></li>
+        <li><a>421 Midland Trail</a></li>
+        <li><a>Hurricane, WV 25526</a></li>
+      </ul></div>
+    </div>
+    <div class="ft-bot">
+      <span>&copy; 2024 Hammonds Law Office PLLC. All Rights Reserved.</span>
+      <span style="color:rgba(255,255,255,.22);">Hurricane, West Virginia</span>
+    </div>
+  </div>
+  <div class="ft-disc">
+    <div class="wrap">The information on this website is for general informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by reading this site. Prior results do not guarantee a similar outcome. Hammonds Law Office PLLC is licensed to practice law in West Virginia only.
+    </div>
+  </div>
+</footer>`;
+}
+
+function finalCta(h, sub) {
+  return `
+<section class="fcta">
+  <div class="wrap" style="position:relative;z-index:2;">
+    <p class="eye eye-l tc">Take the Next Step</p>
+    <h2>${h}</h2>
+    <p>${sub}</p>
+    <div class="acts">
+      <button class="btn btn-gold btn-lg" onclick="go('contact')">📋 Get a Consultation</button>
+      <a href="${PH_H}" class="btn btn-out btn-lg">📞 ${PH}</a>
+    </div>
+    <div class="tr-row">
+      <div class="tr-it"><span class="tr-ic">🎖</span> Iraq War Veteran</div>
+      <div class="tr-it"><span class="tr-ic">⭐</span> Top 40 Under 40</div>
+      <div class="tr-it"><span class="tr-ic">📍</span> Hurricane, WV</div>
+      <div class="tr-it"><span class="tr-ic">🔒</span> Confidential</div>
+    </div>
+  </div>
+</section>`;
+}
+
+function cform() {
+  return `
+<div class="cform">
+  <h3>Book an Appointment</h3>
+  <p class="cform-sub">Tell us about your legal inquiry and we'll call you back to schedule. Please be as detailed as possible.</p>
+  <form id="cf" novalidate>
+    <div class="fr">
+      <div class="fg"><label for="fn">First Name *</label><input type="text" id="fn" placeholder="John" autocomplete="given-name"/><span class="ferr"></span></div>
+      <div class="fg"><label for="ln">Last Name *</label><input type="text" id="ln" placeholder="Smith" autocomplete="family-name"/><span class="ferr"></span></div>
+    </div>
+    <div class="fr">
+      <div class="fg"><label for="ph">Phone *</label><input type="tel" id="ph" placeholder="(304) 000-0000" autocomplete="tel"/><span class="ferr"></span></div>
+      <div class="fg"><label for="em">Email *</label><input type="email" id="em" placeholder="you@email.com" autocomplete="email"/><span class="ferr"></span></div>
+    </div>
+    <div class="fg"><label for="area">Type of Case *</label>
+      <select id="area">
+        <option value="">— Select a Practice Area —</option>
+        <option>Personal Injury</option>
+        <option>Criminal Law</option>
+        <option>Estate Planning</option>
+        <option>Family Law</option>
+        <option>Other / Not Sure</option>
+      </select><span class="ferr"></span>
+    </div>
+    <div class="fg"><label for="msg">Describe Your Situation *</label>
+      <textarea id="msg" placeholder="Include the type of case, any relevant details, and specific documents if needed. All information is kept strictly confidential."></textarea><span class="ferr"></span>
+    </div>
+    <button type="submit" class="btn btn-gold btn-lg fsub">📋 Submit Inquiry</button>
+    <p class="fnote">🔒 All information is confidential. $200 consultation fee · Rates $150–$400/hr depending on case.</p>
+  </form>
+  <div id="form-ok" class="form-ok">
+    <div class="ok-ic">✅</div>
+    <h4>Thank You — We'll Be in Touch</h4>
+    <p style="color:var(--text-m);font-size:.86rem;">We'll call you back to schedule your consultation. For urgent matters: <a href="${PH_H}" style="color:var(--burg);font-weight:700;">${PH}</a>.</p>
+  </div>
+</div>`;
+}
+
+function cinfo() {
+  return `
+<div class="ci">
+  <h3>Reach Us Directly</h3>
+  <div class="ci-item"><div class="ci-ic">📞</div><div><div class="ci-lbl">Primary Phone</div><div class="ci-val"><a href="${PH_H}">${PH}</a></div></div></div>
+  <div class="ci-item"><div class="ci-ic">📞</div><div><div class="ci-lbl">Secondary</div><div class="ci-val"><a href="tel:+13049643437">${PH2}</a></div></div></div>
+  <div class="ci-item"><div class="ci-ic">✉</div><div><div class="ci-lbl">Email</div><div class="ci-val"><a href="mailto:${EMAIL}">${EMAIL}</a></div></div></div>
+  <div class="ci-item"><div class="ci-ic">📍</div><div><div class="ci-lbl">Office</div><div class="ci-val">421 Midland Trail<br>Hurricane, WV 25526</div></div></div>
+  <div class="ci-item"><div class="ci-ic">🕐</div><div><div class="ci-lbl">Office Hours</div><div class="ci-val">Monday – Friday<br>9:00 AM – 5:00 PM</div></div></div>
+  <div class="rates-box">
+    <h4>Consultation &amp; Rates</h4>
+    <p>We offer a <strong style="color:var(--brass-l);">$200 consultation</strong> to walk through your needs and budget. Hourly rates: <strong style="color:var(--brass-l);">$150–$400/hr</strong> depending on case. Flat rates available. Retainers required upfront. Time billed in 10-minute increments, always rounded down.</p>
+  </div>
+</div>`;
+}
+
+function sidebar(active) {
+  const areas = [
+    ['personal-injury','Personal Injury'],
+    ['criminal-law','Criminal Law'],
+    ['estate-planning','Estate Planning'],
+    ['family-law','Family Law'],
+  ];
+  return `
+<div class="psb">
+  <h4>Practice Areas</h4>
+  <ul>${areas.map(([id,lbl])=>`<li><a onclick="go('${id}')" class="${active===id?'on':''}">${active===id?'→ ':''}${lbl}</a></li>`).join('')}</ul>
+  <div class="psb-cta">
+    <h4>Free Call-Back</h4>
+    <p>Tell us about your case and we'll contact you to schedule.</p>
+    <button class="btn btn-gold" style="width:100%;justify-content:center;" onclick="go('contact')">Book Appointment →</button>
+  </div>
+  <div class="psb-cta" style="background:var(--brass);margin-top:10px;">
+    <h4 style="color:var(--burg-d);">Call Directly</h4>
+    <p style="color:var(--burg);">Available Mon–Fri, 9am–5pm</p>
+    <a href="${PH_H}" class="btn btn-dark" style="width:100%;justify-content:center;display:flex;">${PH}</a>
+  </div>
+</div>`;
+}
+
+function faqs(items) {
+  return items.map((it,i)=>`
+<div class="faq-item">
+  <button class="faq-q" data-i="${i}">${it.q}<span class="faq-ic">+</span></button>
+  <div class="faq-ans" id="fa-${i}">${it.a}</div>
+</div>`).join('');
+}
+
+// ── PAGES ──────────────────────────────────────────────────
+const PAGES = {
+
+// HOME
+home: ()=>`
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-tex"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-in">
+    <div class="hero-badge">⚖ Hammonds Law Office PLLC · Hurricane, WV</div>
+    <h1>A Name You Can Trust</h1>
+    <p class="hero-tag">"The Good of the People is the Greatest Law"</p>
+    <p class="hero-sub">Daryl A. Hammonds — Iraq War veteran, former West Virginia police officer, and experienced attorney — fights for people who deserve quality legal representation, regardless of background.</p>
+    <div class="hero-acts">
+      <button class="btn btn-gold btn-lg" onclick="go('contact')">📋 Get a Consultation</button>
+      <a href="${PH_H}" class="btn btn-out btn-lg">📞 ${PH}</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hst"><div class="hst-n">2021</div><div class="hst-l">Founded</div></div>
+      <div class="hst"><div class="hst-n">4</div><div class="hst-l">Practice Areas</div></div>
+      <div class="hst"><div class="hst-n">6</div><div class="hst-l">National Awards</div></div>
+      <div class="hst"><div class="hst-n">WV</div><div class="hst-l">Licensed State</div></div>
+    </div>
+  </div>
+  <div class="hero-scroll">▼ Scroll</div>
+</section>
+
+${honorsStrip()}
+
+<section class="sec" style="background:var(--cream);">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="fin">
+        <p class="eye">About the Firm</p>
+        <h2>We Work For You.</h2>
+        <div class="rl rl-left"></div>
+        <p style="color:var(--text-m);line-height:1.8;">Many people experience anxiety when contacting an attorney for the first time. Most legal issues — from criminal defense to family law and personal injury — involve deeply personal matters. For a successful resolution, it is essential to establish a quality attorney-client relationship built on trust.</p>
+        <p style="color:var(--text-m);line-height:1.8;">The Hammonds Law Office PLLC was created to assist individuals who ordinarily may not be able to obtain legal representation. We strongly believe all people are equal — race, religion, sexual orientation, or social status should never prevent anyone from receiving adequate counsel.</p>
+        <p style="color:var(--text-m);line-height:1.8;">Human rights and equality are at the heart of our mission. We invite you to reach out today.</p>
+        <div class="bq-box">
+          <p class="bq-text">"When you see something that is not right, not fair, not just, you have to speak up. You have to say something; you have to do something."</p>
+          <span class="bq-attr">— John Lewis</span>
+        </div>
+        <div style="margin-top:26px;display:flex;gap:11px;flex-wrap:wrap;">
+          <button class="btn btn-dark" onclick="go('about')">Meet Daryl Hammonds →</button>
+          <button class="btn btn-out-b" onclick="go('contact')">Book a Consultation</button>
+        </div>
+      </div>
+      <div class="atty-card fin d1">
+        <div class="atty-photo"><div style="font-size:5rem;">👨‍⚖️</div><p style="font-size:.72rem;color:rgba(181,146,74,.45);font-style:italic;margin-top:6px;">Daryl A. Hammonds, Esq.</p></div>
+        <div class="atty-info">
+          <div class="atty-name">Daryl A. Hammonds</div>
+          <span class="atty-role">Attorney &amp; Founding Member</span>
+          <div class="atty-facts">
+            <div class="af"><span class="af-ic">🎖</span> Iraq War Veteran — U.S. Army Infantry</div>
+            <div class="af"><span class="af-ic">👮</span> 10 Years Law Enforcement, West Virginia</div>
+            <div class="af"><span class="af-ic">⚖</span> J.D., University of Dayton School of Law, 2019</div>
+            <div class="af"><span class="af-ic">📍</span> West Virginia State Bar</div>
+            <div class="af"><span class="af-ic">⭐</span> National Trial Lawyers Top 40 Under 40</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--parch);">
+  <div class="wrap">
+    <p class="eye tc">What We Do</p>
+    <h2 class="tc">Practice Areas</h2>
+    <div class="rl"></div>
+    <div class="pc-grid">
+      <article class="pc fin"><div class="pc-hd"><div class="pc-ic">🩹</div><h3>Personal Injury</h3></div><div class="pc-bd"><p>Many "accidents" are actually the result of negligence. We fight insurance companies to recover the compensation you deserve.</p><ul class="pc-ul"><li>Car Wrecks &amp; Collisions</li><li>Wrongful Death</li><li>Products Liability</li></ul><button class="btn btn-out-b" onclick="go('personal-injury')">Learn More →</button></div></article>
+      <article class="pc fin d1"><div class="pc-hd"><div class="pc-ic">🛡</div><h3>Criminal Law</h3></div><div class="pc-bd"><p>Don't be scared — be prepared. We build strong, aggressive defenses to protect your rights and future.</p><ul class="pc-ul"><li>DUI Defense</li><li>Felony Offenses</li><li>Misdemeanor Offenses</li><li>Traffic Citations</li></ul><button class="btn btn-out-b" onclick="go('criminal-law')">Learn More →</button></div></article>
+      <article class="pc fin d2"><div class="pc-hd"><div class="pc-ic">📜</div><h3>Estate Planning</h3></div><div class="pc-bd"><p>Protect your assets and ensure your wishes are honored. Peace of mind for you and your loved ones.</p><ul class="pc-ul"><li>Wills &amp; Trusts</li><li>Contested Wills</li><li>Probate</li></ul><button class="btn btn-out-b" onclick="go('estate-planning')">Learn More →</button></div></article>
+      <article class="pc fin d3"><div class="pc-hd"><div class="pc-ic">👨‍👩‍👧</div><h3>Family Law</h3></div><div class="pc-bd"><p>Protecting parental rights through life's most difficult transitions with compassion and experience.</p><ul class="pc-ul"><li>Child Custody</li><li>Parenting Plan Modification</li><li>Divorce</li><li>Protective Orders</li></ul><button class="btn btn-out-b" onclick="go('family-law')">Learn More →</button></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec aw-sec">
+  <div class="wrap">
+    <p class="eye eye-l tc">Recognition</p>
+    <h2 class="tc" style="color:var(--white);">Awards &amp; Accolades</h2>
+    <div class="rl"></div>
+    <div class="aw-grid">
+      <div class="aw fin"><div class="aw-yr">2023</div><div class="aw-title">Best in Hurricane</div><div class="aw-org">Hammonds Law Office</div></div>
+      <div class="aw fin d1"><div class="aw-yr">2024</div><div class="aw-title">Top 40 Under 40</div><div class="aw-org">National Trial Lawyers</div></div>
+      <div class="aw fin d2"><div class="aw-yr">2025</div><div class="aw-title">Top 10 Under 40</div><div class="aw-org">NAOPIA — Personal Injury</div></div>
+      <div class="aw fin d3"><div class="aw-yr">2025</div><div class="aw-title">Top 10 Under 40</div><div class="aw-org">Natl. Academy of Family Attorneys</div></div>
+      <div class="aw fin d1"><div class="aw-yr">2025</div><div class="aw-title">Top 10 Attorney</div><div class="aw-org">NACDA — Criminal Defense</div></div>
+      <div class="aw fin d2"><div class="aw-yr">2026</div><div class="aw-title">Civil Top 40 Under 40</div><div class="aw-org">National Trial Lawyers</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--cream);">
+  <div class="wrap">
+    <p class="eye">Why Choose Us</p>
+    <h2>Attentive, Responsive Representation</h2>
+    <div class="rl rl-left"></div>
+    <div class="why-grid">
+      <div class="why-list">
+        <div class="why-item fin"><div class="why-num">01</div><div class="why-body"><h4>You Won't Get Lost in the Crowd</h4><p>We are a boutique practice. You get direct access to Daryl Hammonds — who personally knows your situation and returns your calls promptly.</p></div></div>
+        <div class="why-item fin d1"><div class="why-num">02</div><div class="why-body"><h4>Equipped for Complex Cases</h4><p>We handle high-asset divorces, major felonies, and sophisticated civil litigation — without ever sacrificing individual client attention.</p></div></div>
+        <div class="why-item fin d2"><div class="why-num">03</div><div class="why-body"><h4>Transparent, Fair Billing</h4><p>Time billed in 10-minute increments, always rounded down. Detailed work logs disclosed at case close. You'll never be overbilled.</p></div></div>
+        <div class="why-item fin d3"><div class="why-num">04</div><div class="why-body"><h4>A Unique Perspective</h4><p>As a veteran and former law enforcement officer, Daryl Hammonds understands the justice system from both sides — an advantage no other local attorney can match.</p></div></div>
+        <div style="margin-top:26px;" class="fin d2"><button class="btn btn-dark" onclick="go('about')">Learn About Daryl Hammonds →</button></div>
+      </div>
+      <div class="why-box fin d1">
+        <h3>Ready to Talk?</h3>
+        <p>Schedule a consultation to walk through your legal needs, goals, and budget with honest guidance.</p>
+        <a href="${PH_H}" class="ph">${PH}</a>
+        <button class="btn btn-gold btn-lg" onclick="go('contact')" style="width:100%;justify-content:center;">📋 Book an Appointment</button>
+        <p style="margin-top:12px;font-size:.75rem;color:rgba(255,255,255,.42);">$200 consultation fee · $150–$400/hr depending on case<br>Mon–Fri 9am–5pm · 421 Midland Trail, Hurricane WV</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--parch);">
+  <div class="wrap">
+    <p class="eye tc">Client Reviews</p>
+    <h2 class="tc">What Clients Are Saying</h2>
+    <div class="rl"></div>
+    <div class="t-grid">
+      <article class="tc-card fin"><div class="tc-qm">"</div><div class="tc-stars">★★★★★</div><p class="tc-text">"Hammonds Law went above and beyond when it came to our case! I will always recommend and come to him for all of our future hearings! 100% the best!!! So thankful we had the opportunity for him to represent us!!"</p><div class="tc-rev"><div class="tc-av">CD</div><div><div class="tc-name">Cheyanne Doniff</div><span class="g-badge">✓ Google Review</span></div></div></article>
+      <article class="tc-card fin d1"><div class="tc-qm">"</div><div class="tc-stars">★★★★★</div><p class="tc-text">"I am MORE than pleased with the services that Mr. Hammonds did for me. He was very knowledgeable and quick to get started on my case. He kept in touch to keep me updated and I felt that he truly wanted to help. I would DEFINITELY use his services again."</p><div class="tc-rev"><div class="tc-av">JW</div><div><div class="tc-name">Jack Workman</div><span class="g-badge">✓ Google Review</span></div></div></article>
+      <article class="tc-card fin d2"><div class="tc-qm">"</div><div class="tc-stars">★★★★★</div><p class="tc-text">"Mr. Hammonds is a great lawyer with strong values. He doesn't lie to you or beat around the bush and always tells you what's in your best interests. He is by far the best lawyer around."</p><div class="tc-rev"><div class="tc-av">MG</div><div><div class="tc-name">Michelle Garcia</div><span class="g-badge">✓ Google Review</span></div></div></article>
+    </div>
+    <div class="tc" style="margin-top:34px;"><button class="btn btn-out-b" onclick="go('testimonials')">Read All Reviews</button></div>
+  </div>
+</section>
+
+${finalCta('Your Legal Matter Deserves Dedicated Attention.','At Hammonds Law Office, you get a lawyer who listens, responds promptly, and fights for you — regardless of your background or resources.')}
+${footer()}`,
+
+// ABOUT
+about: ()=>`
+<section class="pg-hero">
+  <div class="wrap"><div class="pg-cnt">
+    <nav class="bc"><a onclick="go('home')">Home</a><span>›</span><span class="cur">About</span></nav>
+    <p class="eye eye-l">About the Firm</p>
+    <h1>Passion. Experience. Diligence.</h1>
+    <p class="lead">Hammonds Law Office PLLC was founded in 2021 to give everyone — regardless of background — access to quality legal representation in West Virginia.</p>
+  </div></div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="fin">
+        <p class="eye">Our Story</p>
+        <h2>Founded on Equality &amp; Access to Justice</h2>
+        <div class="rl rl-left"></div>
+        <p style="color:var(--text-m);line-height:1.8;">The Hammonds Law Office PLLC was created in 2021 by Attorney Daryl A. Hammonds. The goal of the firm is to assist individuals with legal matters who ordinarily may not be able to obtain representation.</p>
+        <p style="color:var(--text-m);line-height:1.8;">We strongly believe that all people are equal and that race, religion, sexual orientation, or social status should not prevent individuals from obtaining adequate counsel. All persons should have equal protection under the law — this is our core value.</p>
+        <p style="color:var(--text-m);line-height:1.8;">Human rights and equality are at the heart of our mission. Upon creation of this office, Daryl A. Hammonds set out to help those in need, to mold and change public policy, and to give back to the community.</p>
+        <div class="bq-box">
+          <p class="bq-text">"When you see something that is not right, not fair, not just, you have to speak up. You have to say something; you have to do something."</p>
+          <span class="bq-attr">— John Lewis</span>
+        </div>
+      </div>
+      <div class="atty-card fin d1">
+        <div class="atty-photo" style="height:300px;"><div style="font-size:5rem;">👨‍⚖️</div><p style="font-size:.72rem;color:rgba(181,146,74,.45);font-style:italic;margin-top:6px;">Daryl A. Hammonds, Esq.</p></div>
+        <div class="atty-info">
+          <div class="atty-name">Daryl A. Hammonds</div>
+          <span class="atty-role">Attorney &amp; Founding Member</span>
+          <div class="atty-facts">
+            <div class="af"><span class="af-ic">🎖</span> U.S. Army Infantryman — Iraq War Veteran</div>
+            <div class="af"><span class="af-ic">👮</span> 10 Years Corrections &amp; Police Officer, WV</div>
+            <div class="af"><span class="af-ic">⚖</span> J.D. — University of Dayton School of Law, 2019</div>
+            <div class="af"><span class="af-ic">🎓</span> B.S. Criminal Justice — American Military University, 2014</div>
+            <div class="af"><span class="af-ic">📋</span> A.S. Criminal Justice — Mountain State University, 2012</div>
+            <div class="af"><span class="af-ic">📍</span> West Virginia State Bar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--parch);">
+  <div class="wrap">
+    <p class="eye tc">Core Values</p>
+    <h2 class="tc">What We Stand For</h2>
+    <div class="rl"></div>
+    <div class="val-grid">
+      <div class="val-card fin"><div class="val-ic">⚖</div><h4>Equal Justice</h4><p>Legal representation should not be a privilege of the wealthy. Every person — regardless of background — deserves access to quality counsel and equal protection under the law.</p></div>
+      <div class="val-card fin d1"><div class="val-ic">🤝</div><h4>Trust &amp; Integrity</h4><p>Mr. Hammonds tells clients the truth — not just what they want to hear. Honest communication is the foundation of every successful case.</p></div>
+      <div class="val-card fin d2"><div class="val-ic">💪</div><h4>Dedication</h4><p>From military service to a decade in law enforcement to the courtroom — Daryl Hammonds has spent his adult life in public service, protecting others.</p></div>
+      <div class="val-card fin d3"><div class="val-ic">🏘</div><h4>Community</h4><p>The firm was founded to give back to the communities of West Virginia. Daryl Hammonds actively volunteers and supports charitable causes locally and abroad.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;" class="two-col">
+      <div class="fin">
+        <p class="eye">Education &amp; Background</p>
+        <h2>Built for the Courtroom</h2>
+        <div class="rl rl-left"></div>
+        <ul class="edu-list">
+          <li class="edu-item"><div class="edu-ic">🎓</div><div class="edu-b"><h5>University of Dayton School of Law</h5><span>Juris Doctor, 2019</span></div></li>
+          <li class="edu-item"><div class="edu-ic">🎓</div><div class="edu-b"><h5>American Military University</h5><span>B.S., Criminal Justice, Forensics, 2014</span></div></li>
+          <li class="edu-item"><div class="edu-ic">🎓</div><div class="edu-b"><h5>Mountain State University</h5><span>A.S., Criminal Justice, 2012</span></div></li>
+          <li class="edu-item"><div class="edu-ic">🎖</div><div class="edu-b"><h5>U.S. Army — Infantry</h5><span>Iraq War Veteran</span></div></li>
+          <li class="edu-item"><div class="edu-ic">👮</div><div class="edu-b"><h5>West Virginia Law Enforcement</h5><span>10 Years — Corrections &amp; Police Officer</span></div></li>
+        </ul>
+        <div style="margin-top:22px;">
+          <h4 style="margin-bottom:12px;">Affiliations</h4>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:7px;">
+            <li style="font-size:.85rem;color:var(--text-m);display:flex;gap:8px;"><span style="color:var(--brass);">›</span> University of Dayton Alumni, Member</li>
+            <li style="font-size:.85rem;color:var(--text-m);display:flex;gap:8px;"><span style="color:var(--brass);">›</span> Veterans of Foreign Wars, Member</li>
+            <li style="font-size:.85rem;color:var(--text-m);display:flex;gap:8px;"><span style="color:var(--brass);">›</span> National Infantry Association, Member</li>
+            <li style="font-size:.85rem;color:var(--text-m);display:flex;gap:8px;"><span style="color:var(--brass);">›</span> West Virginia Association for Justice</li>
+          </ul>
+        </div>
+      </div>
+      <div class="fin d1">
+        <p class="eye">Recognition</p>
+        <h2>Awards &amp; Honors</h2>
+        <div class="rl rl-left"></div>
+        <div class="aw-grid" style="grid-template-columns:1fr 1fr;gap:12px;margin-top:0;">
+          <div class="aw" style="background:var(--burg);"><div class="aw-yr">2023</div><div class="aw-title">Best in Hurricane</div></div>
+          <div class="aw" style="background:var(--burg);"><div class="aw-yr">2024</div><div class="aw-title">Top 40 Under 40</div><div class="aw-org">National Trial Lawyers</div></div>
+          <div class="aw" style="background:var(--burg);"><div class="aw-yr">2025</div><div class="aw-title">Top 10 Under 40</div><div class="aw-org">NAOPIA</div></div>
+          <div class="aw" style="background:var(--burg);"><div class="aw-yr">2025</div><div class="aw-title">Top 10 Under 40</div><div class="aw-org">Family Attorneys</div></div>
+          <div class="aw" style="background:var(--burg);"><div class="aw-yr">2025</div><div class="aw-title">Top 10 Attorney</div><div class="aw-org">Criminal Defense</div></div>
+          <div class="aw" style="background:var(--burg);"><div class="aw-yr">2026</div><div class="aw-title">Civil Top 40 Under 40</div><div class="aw-org">Natl. Trial Lawyers</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+${finalCta('Finding the Right Attorney Is a Decision Not to Be Taken Lightly.','Schedule a $200 consultation to walk through your needs, goals, and budget — with honest, straightforward guidance.')}
+${footer()}`,
+
+// PRACTICE AREAS
+'practice-areas': ()=>`
+<section class="pg-hero">
+  <div class="wrap"><div class="pg-cnt">
+    <nav class="bc"><a onclick="go('home')">Home</a><span>›</span><span class="cur">Practice Areas</span></nav>
+    <p class="eye eye-l">What We Do</p>
+    <h1>Practice Areas</h1>
+    <p class="lead">Serving Putnam, Kanawha, Cabell, and Mason counties with skilled legal representation across four core areas of practice.</p>
+  </div></div>
+</section>
+<section class="sec" style="background:var(--parch);">
+  <div class="wrap">
+    <p class="eye tc">Our Services</p>
+    <h2 class="tc">How Can We Help You?</h2>
+    <div class="rl"></div>
+    <div class="pc-grid">
+      <article class="pc fin"><div class="pc-hd"><div class="pc-ic">🩹</div><h3>Personal Injury</h3></div><div class="pc-bd"><p>Many so-called "accidents" are the result of negligence. We fight insurance companies to recover the compensation you deserve.</p><ul class="pc-ul"><li>Car Wrecks &amp; Collisions</li><li>Wrongful Death</li><li>Products Liability</li></ul><button class="btn btn-out-b" onclick="go('personal-injury')">Explore →</button></div></article>
+      <article class="pc fin d1"><div class="pc-hd"><div class="pc-ic">🛡</div><h3>Criminal Law</h3></div><div class="pc-bd"><p>An arrest marks the beginning of a long legal process. We build a strong, aggressive defense to protect your rights and interests.</p><ul class="pc-ul"><li>DUI Defense</li><li>Felony Offenses</li><li>Misdemeanor Offenses</li><li>Traffic Citations</li></ul><button class="btn btn-out-b" onclick="go('criminal-law')">Explore →</button></div></article>
+      <article class="pc fin d2"><div class="pc-hd"><div class="pc-ic">📜</div><h3>Estate Planning</h3></div><div class="pc-bd"><p>Planning for serious illness, disability, or passing is often overlooked — but it is one of the most important things you can do.</p><ul class="pc-ul"><li>Wills &amp; Trusts</li><li>Contested Wills</li><li>Probate</li></ul><button class="btn btn-out-b" onclick="go('estate-planning')">Explore →</button></div></article>
+      <article class="pc fin d3"><div class="pc-hd"><div class="pc-ic">👨‍👩‍👧</div><h3>Family Law</h3></div><div class="pc-bd"><p>At the core of family law are life-changing decisions. We protect clients and families from irreparable harm through divorce and custody proceedings.</p><ul class="pc-ul"><li>Child Custody</li><li>Parenting Plan Modification</li><li>Divorce</li><li>Protective Orders</li></ul><button class="btn btn-out-b" onclick="go('family-law')">Explore →</button></div></article>
+    </div>
+  </div>
+</section>
+${finalCta('Not Sure Which Area Applies?','Schedule a consultation and we\'ll help you understand your situation and the best path forward.')}
+${footer()}`,
+
+// PERSONAL INJURY
+'personal-injury': ()=>`
+<section class="pg-hero">
+  <div class="wrap"><div class="pg-cnt">
+    <nav class="bc"><a onclick="go('home')">Home</a><span>›</span><a onclick="go('practice-areas')">Practice Areas</a><span>›</span><span class="cur">Personal Injury</span></nav>
+    <p style="font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-l);margin-bottom:8px;">Proudly Serving Putnam, Kanawha, Cabell, Mason</p>
+    <div style="font-size:2.8rem;margin-bottom:12px;">🩹</div>
+    <h1>Injured? You Deserve Compensation.</h1>
+    <p class="lead">Many "accidents" are the result of negligence — not chance. We hold insurance companies accountable and fight for what you deserve.</p>
+    <div style="display:flex;gap:11px;flex-wrap:wrap;margin-top:26px;">
+      <button class="btn btn-gold" onclick="go('contact')">📋 Get a Consultation</button>
+      <a href="${PH_H}" class="btn btn-out">${PH}</a>
+    </div>
+  </div></div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="two-col">
+      <div class="cs fin">
+        <p class="eye">Personal Injury in WV</p>
+        <h2>We Fight the Insurance Companies</h2>
+        <div class="rl rl-left"></div>
+        <p>Although many events that result in injury are referred to as "accidents," the truth is that many are simply the result of someone's negligent acts and lack of due care. When this happens, you have a right to compensation for your injuries, lost wages, medical bills, and pain and suffering.</p>
+        <p>Insurance companies have one goal: to pay as little as possible. They often deny claims altogether or offer far less than the case is worth. The Hammonds Law Office PLLC will represent your interests against these insurance companies so that you receive the compensation you truly deserve.</p>
+        <h3>Types of Cases We Handle</h3>
+        <ul>
+          <li><strong>Car Wrecks &amp; Traffic Collisions</strong> — Whether caused by a distracted, drunk, or reckless driver, we pursue maximum recovery for your injuries and damages.</li>
+          <li><strong>Wrongful Death</strong> — If a loved one was killed due to someone's negligence, we help surviving family members pursue justice and financial compensation.</li>
+          <li><strong>Products Liability</strong> — Manufacturers have a duty to ensure their products are safe. When defective products cause injury, we hold them accountable.</li>
+        </ul>
+
+        <div class="scars" style="margin-top:28px;">
+          <h4>If Involved in a Traffic Collision — Think S.C.A.R.S.</h4>
+          <div class="scars-items">
+            <div class="scars-row"><div class="scars-let">S</div><div class="scars-txt"><strong style="color:white;">Safety</strong> — Move to a safe location if possible. Do not remain in the roadway.</div></div>
+            <div class="scars-row"><div class="scars-let">C</div><div class="scars-txt"><strong style="color:white;">Call 911</strong> — Report the accident immediately. Do not leave the scene.</div></div>
+            <div class="scars-row"><div class="scars-let">A</div><div class="scars-txt"><strong style="color:white;">Await First Responders</strong> — Wait for police and EMS to arrive and document the scene.</div></div>
+            <div class="scars-row"><div class="scars-let">R</div><div class="scars-txt"><strong style="color:white;">Report Everything</strong> — Give a full account to responding officers. Be accurate and thorough.</div></div>
+            <div class="scars-row"><div class="scars-let">S</div><div class="scars-txt"><strong style="color:white;">Snap Photos</strong> — Document all vehicle damage, injuries, road conditions, and license plates.</div></div>
+          </div>
+        </div>
+
+        <div class="hl" style="margin-top:26px;"><h4>Before Talking to Insurance — Call Us First</h4><p>What you say to insurance adjusters can be used to minimize or deny your claim. Let us handle all communications on your behalf from the start.</p></div>
+
+        <div class="tc-card" style="margin-top:28px;"><div class="tc-qm">"</div><div class="tc-stars">★★★★★</div><p class="tc-text">"Mr. Hammonds is a great lawyer with strong values. He doesn't lie to you or beat around the bush and always tells you what's in your best interests."</p><div class="tc-rev"><div class="tc-av">MG</div><div><div class="tc-name">Michelle Garcia</div><span class="g-badge">✓ Google Review</span></div></div></div>
+      </div>
+      ${sidebar('personal-injury')}
+    </div>
+  </div>
+</section>
+<section class="sec" style="background:var(--parch);">
+  <div class="wrap">
+    <p class="eye tc">Personal Injury FAQ</p>
+    <h2 class="tc">Common Questions</h2>
+    <div class="rl"></div>
+    <div class="faq-list">
+      ${faqs([
+        {q:'How long do I have to file a personal injury claim in West Virginia?',a:'West Virginia has a two-year statute of limitations for most personal injury claims, meaning you generally have two years from the date of injury to file suit. Exceptions exist, so contact an attorney as soon as possible after an injury to preserve your rights.'},
+        {q:'Should I talk to the other driver\'s insurance company?',a:'No — not without speaking to an attorney first. Insurance adjusters are trained to minimize payouts. Even a seemingly innocent statement can be used to reduce or deny your claim. Let Hammonds Law handle all communications on your behalf.'},
+        {q:'What if I was partially at fault for the accident?',a:'West Virginia follows a "modified comparative negligence" rule. As long as you are less than 51% at fault, you can still recover damages — reduced by your percentage of fault. This makes skilled legal representation especially important.'},
+        {q:'How much is my case worth?',a:'Every case is different. Compensation may include medical bills, lost wages, future medical expenses, pain and suffering, and more. During your consultation, we\'ll evaluate the specific facts and give you an honest assessment.'},
+      ])}
+    </div>
+  </div>
+</section>
+${finalCta('Injured? Don\'t Wait — Evidence Disappears Quickly.','Contact Hammonds Law today. We\'ll evaluate your case and tell you exactly what your options are.')}
+${footer()}`,
+
+// CRIMINAL LAW
+'criminal-law': ()=>`
+<section class="pg-hero" style="background:linear-gradient(135deg,#120508 0%,var(--burg-d) 100%);">
+  <div class="wrap"><div class="pg-cnt">
+    <nav class="bc"><a onclick="go('home')">Home</a><span>›</span><a onclick="go('practice-areas')">Practice Areas</a><span>›</span><span class="cur">Criminal Law</span></nav>
+    <p style="font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-l);margin-bottom:8px;">Proudly Serving Putnam, Kanawha, Cabell, Mason</p>
+    <div style="font-size:2.8rem;margin-bottom:12px;">🛡</div>
+    <h1>Don't Be Scared.<br>Be Prepared.</h1>
+    <p class="lead">An arrest only marks the beginning of a long legal process. Let the Hammonds Law Office work with you to build a strong, aggressive defense to protect your rights and interests.</p>
+    <div style="display:flex;gap:11px;flex-wrap:wrap;margin-top:26px;">
+      <button class="btn btn-gold" onclick="go('contact')">📋 Emergency Consultation</button>
+      <a href="${PH_H}" class="btn btn-out">${PH}</a>
+    </div>
+  </div></div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="two-col">
+      <div class="cs fin">
+        <p class="eye">Criminal Defense in WV</p>
+        <h2>Aggressive Defense. Protecting Your Rights.</h2>
+        <div class="rl rl-left"></div>
+        <p>If you, a friend, or a family member are arrested or accused of a crime, the stress and uncertainty can be debilitating. However, this is the time to take immediate action. The Hammonds Law Office PLLC will work with you to build a strong, aggressive defense to protect your rights and interests during this difficult time.</p>
+        <p>Having spent a decade in law enforcement before becoming an attorney, Daryl Hammonds understands the criminal justice system from both sides — an advantage that directly benefits his clients.</p>
+        <h3>Criminal Law Services</h3>
+        <ul>
+          <li><strong>DUI Defense</strong> — We challenge every element of DUI cases, from the validity of the traffic stop to breathalyzer accuracy.</li>
+          <li><strong>Felony Offenses</strong> — Serious charges demand serious defense. We handle all felony matters in West Virginia courts.</li>
+          <li><strong>Misdemeanor Offenses</strong> — Even misdemeanor convictions can affect employment, housing, and reputation. We fight for dismissal or reduction.</li>
+          <li><strong>Traffic Citations</strong> — Traffic violations can impact your insurance and license. We contest citations aggressively.</li>
+        </ul>
+
+        <div class="hl" style="margin-top:26px;"><h4>⚠ Know Your Rights Upon Arrest</h4><p><strong style="color:var(--brass-l);">Right to remain silent</strong> — You are not required to answer questions beyond identifying yourself. Exercise this right immediately.<br><br><strong style="color:var(--brass-l);">Right to an attorney</strong> — Request one clearly and immediately. Once invoked, questioning must stop.<br><br><strong style="color:var(--brass-l);">Do not consent to searches</strong> beyond what is legally required.</p></div>
+
+        <div class="hl hl-light" style="margin-top:14px;"><h4>West Virginia Public Defender</h4><p>If you cannot afford an attorney, the WV Public Defender's office is available at <strong>pds.wv.gov</strong>. However, private representation from Hammonds Law provides more dedicated attention and a customized defense strategy.</p></div>
+
+        <div class="tc-card" style="margin-top:28px;"><div class="tc-qm">"</div><div class="tc-stars">★★★★★</div><p class="tc-text">"Very professional, and extremely knowledgeable."</p><div class="tc-rev"><div class="tc-av">JC</div><div><div class="tc-name">Jason Carlson</div><span class="g-badge">✓ Google Review</span></div></div></div>
+      </div>
+      <div>
+        ${sidebar('criminal-law')}
+        <div style="background:var(--burg-d);border:1px solid rgba(181,146,74,.3);border-radius:8px;padding:20px;margin-top:13px;">
+          <h4 style="color:var(--brass-l);margin-bottom:9px;font-size:.92rem;">🚨 Arrested? Act Now.</h4>
+          <p style="color:rgba(255,255,255,.62);font-size:.8rem;margin-bottom:11px;">Time is critical. Actions taken in the hours after arrest can dramatically impact your case. Call immediately.</p>
+          <a href="${PH_H}" class="btn btn-gold" style="width:100%;justify-content:center;display:flex;">${PH}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec" style="background:var(--parch);">
+  <div class="wrap">
+    <p class="eye tc">Criminal Law FAQ</p>
+    <h2 class="tc">Common Questions</h2>
+    <div class="rl"></div>
+    <div class="faq-list">
+      ${faqs([
+        {q:'What should I do immediately after being arrested?',a:'Exercise your right to remain silent and request an attorney immediately. Do not answer questions, consent to searches, or make any statements without your attorney present. Contact Hammonds Law as soon as you have access to a phone.'},
+        {q:'What is the difference between a felony and a misdemeanor in West Virginia?',a:'Misdemeanors are less serious offenses typically punishable by up to one year in county jail. Felonies carry more than one year in state prison. Both can have lasting effects on your record, employment, and rights — including firearm ownership.'},
+        {q:'Can my criminal record be expunged in West Virginia?',a:'West Virginia does allow expungement for certain offenses, including some misdemeanors and cases where charges were dismissed. Eligibility depends on the specific offense, outcome, and time elapsed. We can review your record and advise on your options.'},
+        {q:'What happens at a DUI arrest in West Virginia?',a:'A DUI arrest triggers two separate proceedings: the criminal case in court and an administrative DMV license suspension action. Both require prompt attention. The legal blood alcohol limit in WV is 0.08% for adults, lower for commercial drivers and those under 21.'},
+      ])}
+    </div>
+  </div>
+</section>
+${finalCta('Charged With a Crime? Don\'t Face It Alone.','Daryl Hammonds has been on both sides of the law. He knows how to build a winning defense. Call now.')}
+${footer()}`,
+
+// ESTATE PLANNING
+'estate-planning': ()=>`
+<section class="pg-hero">
+  <div class="wrap"><div class="pg-cnt">
+    <nav class="bc"><a onclick="go('home')">Home</a><span>›</span><a onclick="go('practice-areas')">Practice Areas</a><span>›</span><span class="cur">Estate Planning</span></nav>
+    <p style="font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-l);margin-bottom:8px;">Proudly Serving Putnam, Kanawha, Cabell, Mason</p>
+    <div style="font-size:2.8rem;margin-bottom:12px;">📜</div>
+    <h1>Plan for the Future.<br>Protect What Matters.</h1>
+    <p class="lead">Planning for serious illness, disability, or your passing is often overlooked — but it's one of the most important things you can do for yourself and your loved ones.</p>
+    <div style="display:flex;gap:11px;flex-wrap:wrap;margin-top:26px;">
+      <button class="btn btn-gold" onclick="go('contact')">📋 Get a Consultation</button>
+      <a href="${PH_H}" class="btn btn-out">${PH}</a>
+    </div>
+  </div></div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="two-col">
+      <div class="cs fin">
+        <p class="eye">Estate Planning in WV</p>
+        <h2>Peace of Mind for You and Your Family</h2>
+        <div class="rl rl-left"></div>
+        <p>Thinking about the future typically involves aspirations of going to college, obtaining a successful career, and starting a family. Unfortunately, the importance of planning for serious illness, disability, or your passing is often overlooked.</p>
+        <p>The Hammonds Law Office PLLC will diligently work so that you have the peace of mind that both yourself and loved ones will be provided for in the event of serious injury or death. We will represent your interests so that your assets are protected and your wishes are carried out.</p>
+        <h3>Estate Planning Services</h3>
+        <ul>
+          <li><strong>Wills &amp; Trusts</strong> — A properly drafted will or trust ensures your assets go to the people and causes you care about, and not to the state or unintended parties.</li>
+          <li><strong>Contested Wills</strong> — When a will is challenged, we represent your interests in probate court to ensure the true wishes of the deceased are honored.</li>
+          <li><strong>Probate</strong> — We guide executors and beneficiaries through the probate process, handling court filings, creditor negotiations, and asset distribution.</li>
+        </ul>
+        <div class="hl" style="margin-top:26px;"><h4>Why Estate Planning Matters</h4><p>Without a will, West Virginia's intestacy laws determine who receives your assets — which may not align with your wishes. Without a healthcare directive, others may make critical medical decisions for you. Don't leave these decisions to chance.</p></div>
+        <div class="hl hl-light" style="margin-top:14px;">
+          <h4>Common Mistakes to Avoid</h4>
+          <ul style="color:var(--text-m);font-size:.86rem;margin-left:16px;">
+            <li>Not updating your will after major life events (marriage, divorce, children)</li>
+            <li>Failing to name beneficiaries on retirement and insurance accounts</li>
+            <li>Not establishing powers of attorney for financial and healthcare decisions</li>
+            <li>Assuming estate planning is only for the elderly or wealthy — it is for everyone</li>
+          </ul>
+        </div>
+      </div>
+      ${sidebar('estate-planning')}
+    </div>
+  </div>
+</section>
+<section class="sec" style="background:var(--parch);">
+  <div class="wrap">
+    <p class="eye tc">Estate Planning FAQ</p>
+    <h2 class="tc">Common Questions</h2>
+    <div class="rl"></div>
+    <div class="faq-list">
+      ${faqs([
+        {q:'Do I need a will if I don\'t have many assets?',a:'Yes. A will ensures your wishes are known regarding your possessions and — critically — the care of any minor children. Without a will, a court decides who raises your children and who receives your belongings, which may not reflect your intentions.'},
+        {q:'What is the difference between a will and a trust?',a:'A will takes effect only after death and must go through probate. A trust can take effect during your lifetime and allows assets to pass to beneficiaries without probate, saving time and money. The right choice depends on your assets, family situation, and goals.'},
+        {q:'What is probate and how long does it take in West Virginia?',a:'Probate is the court-supervised process of distributing a deceased person\'s estate. In West Virginia, it typically takes six months to a year or more for complex estates. Proper estate planning can significantly reduce or eliminate the probate process.'},
+        {q:'When should I update my estate plan?',a:'Review your estate plan after major life events: marriage, divorce, birth of a child, a significant change in assets, death of a named beneficiary, or moving to a new state. As a general rule, review every three to five years.'},
+      ])}
+    </div>
+  </div>
+</section>
+${finalCta('Don\'t Leave Your Family\'s Future to Chance.','Estate planning is one of the most important acts of care you can provide for your loved ones. Start today.')}
+${footer()}`,
+
+// FAMILY LAW
+'family-law': ()=>`
+<section class="pg-hero">
+  <div class="wrap"><div class="pg-cnt">
+    <nav class="bc"><a onclick="go('home')">Home</a><span>›</span><a onclick="go('practice-areas')">Practice Areas</a><span>›</span><span class="cur">Family Law</span></nav>
+    <p style="font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-l);margin-bottom:8px;">Proudly Serving Putnam, Kanawha, Cabell, Mason</p>
+    <div style="font-size:2.8rem;margin-bottom:12px;">👨‍👩‍👧</div>
+    <h1>Protecting Parental Rights<br>&amp; West Virginia Families</h1>
+    <p class="lead">The outcome of divorce and custody proceedings can have lasting effects on your family for years to come. We are committed to protecting clients and their families from irreparable harm.</p>
+    <div style="display:flex;gap:11px;flex-wrap:wrap;margin-top:26px;">
+      <button class="btn btn-gold" onclick="go('contact')">📋 Get a Consultation</button>
+      <a href="${PH_H}" class="btn btn-out">${PH}</a>
+    </div>
+  </div></div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <div class="two-col">
+      <div class="cs fin">
+        <p class="eye">Family Law in WV</p>
+        <h2>Compassionate Guidance. Strong Advocacy.</h2>
+        <div class="rl rl-left"></div>
+        <p>At the core of family law are life-changing decisions individuals are often forced to make. The Hammonds Law Office PLLC understands the challenges faced when dealing with divorce and custody disputes. We are committed to protecting clients and their families from irreparable harm and the stress associated with divorce and separation.</p>
+        <h3>Family Law Services</h3>
+        <ul>
+          <li><strong>Child Custody</strong> — We advocate for custody arrangements that prioritize your children's wellbeing while protecting your parental rights.</li>
+          <li><strong>Parenting Plan Modification</strong> — When circumstances change, we help modify existing parenting plans to reflect current reality.</li>
+          <li><strong>Divorce</strong> — Whether contested or uncontested, we guide you through divorce to protect your financial interests and family.</li>
+          <li><strong>Protective Orders</strong> — We move swiftly to obtain domestic violence protective orders for clients and their children in dangerous situations.</li>
+        </ul>
+
+        <div class="hl" style="margin-top:26px;"><h4>West Virginia Family Court Resources</h4><p>Self-represented litigants can find resources at <strong style="color:var(--brass-l);">legalaidwv.org</strong> and <strong style="color:var(--brass-l);">courtswv.gov</strong>. However, professional representation significantly improves outcomes, especially in contested custody and high-asset divorce cases.</p></div>
+
+        <div class="tc-card" style="margin-top:28px;"><div class="tc-qm">"</div><div class="tc-stars">★★★★★</div><p class="tc-text">"Hammonds Law went above and beyond when it came to our case! I will always recommend and come to him for all of our future hearings! 100% the best!!!"</p><div class="tc-rev"><div class="tc-av">CD</div><div><div class="tc-name">Cheyanne Doniff</div><span class="g-badge">✓ Google Review</span></div></div></div>
+      </div>
+      ${sidebar('family-law')}
+    </div>
+  </div>
+</section>
+<section class="sec" style="background:var(--parch);">
+  <div class="wrap">
+    <p class="eye tc">Family Law FAQ</p>
+    <h2 class="tc">Common Questions</h2>
+    <div class="rl"></div>
+    <div class="faq-list">
+      ${faqs([
+        {q:'How is child custody determined in West Virginia?',a:'WV courts determine custody based on the "best interests of the child" standard, considering factors including each parent\'s relationship with the child, work schedules, stability of each home, and — when age-appropriate — the child\'s own preferences. Courts can award sole or joint legal and physical custody.'},
+        {q:'Can I modify an existing custody or support order?',a:'Yes. Either parent can petition to modify an order when there has been a "substantial change in circumstances" — such as a significant income change, relocation, a change in the child\'s needs, or documented safety concerns. We handle modification cases regularly.'},
+        {q:'How long does a divorce take in West Virginia?',a:'An uncontested divorce where both parties agree on all terms can be finalized relatively quickly. A contested divorce involving disputes over property, custody, or support can take many months to over a year. West Virginia requires a waiting period before a no-fault divorce can be finalized.'},
+        {q:'What is a protective order and how do I get one?',a:'A protective order prohibits an abusive person from contacting or coming near you. In emergency situations, a temporary protective order can be obtained very quickly. We can help you file and represent you at the hearing.'},
+      ])}
+    </div>
+  </div>
+</section>
+${finalCta('Your Family\'s Future Is Worth Fighting For.','Schedule a consultation with Daryl Hammonds today — compassionate counsel and aggressive advocacy when you need it most.')}
+${footer()}`,
+
+// TESTIMONIALS
+testimonials: ()=>`
+<section class="pg-hero">
+  <div class="wrap"><div class="pg-cnt">
+    <nav class="bc"><a onclick="go('home')">Home</a><span>›</span><span class="cur">Testimonials</span></nav>
+    <p class="eye eye-l">What Clients Say</p>
+    <h1>Testimonials</h1>
+    <p class="lead">Real clients. Real results. Hear directly from the people Daryl Hammonds has represented across West Virginia.</p>
+  </div></div>
+</section>
+<section class="sec" style="background:var(--parch);">
+  <div class="wrap">
+    <p class="eye tc">Verified Google Reviews</p>
+    <h2 class="tc">Client Testimonials</h2>
+    <div class="rl"></div>
+    <div style="display:flex;gap:24px;align-items:center;justify-content:center;background:var(--burg-d);border-radius:12px;padding:26px;margin-bottom:44px;flex-wrap:wrap;">
+      <div class="tc"><div style="font-family:var(--fd);font-size:3.8rem;font-weight:700;color:var(--brass);line-height:1;">5.0</div><div style="font-size:1.2rem;color:var(--brass);">★★★★★</div><div style="font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-top:5px;">Average Rating</div></div>
+      <div class="tc"><div style="font-family:var(--fd);font-size:2.3rem;font-weight:700;color:var(--brass);">100%</div><div style="font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-top:5px;">5-Star Reviews</div></div>
+      <div class="tc"><div style="font-size:.67rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:7px;">Verified On</div><div style="display:flex;gap:9px;flex-wrap:wrap;justify-content:center;"><span style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:5px 13px;border-radius:4px;font-size:.78rem;font-weight:700;color:white;">G Google</span><span style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:5px 13px;border-radius:4px;font-size:.78rem;font-weight:700;color:white;">Trustindex</span></div></div>
+    </div>
+    <div class="t-grid">
+      <article class="tc-card fin"><div class="tc-qm">"</div><div class="tc-stars">★★★★★</div><p class="tc-text">"Very professional, and extremely knowledgeable."</p><div class="tc-rev"><div class="tc-av">JC</div><div><div class="tc-name">Jason Carlson</div><span class="g-badge">✓ Verified Google Review</span></div></div></article>
+      <article class="tc-card fin d1"><div class="tc-qm">"</div><div class="tc-stars">★★★★★</div><p class="tc-text">"Hammonds Law went above and beyond when it came to our case! I will always recommend and come to him for all of our future hearings! 100% the best!!! So thankful we had the opportunity for him to represent us!!"</p><div class="tc-rev"><div class="tc-av">CD</div><div><div class="tc-name">Cheyanne Doniff</div><span class="g-badge">✓ Verified Google Review</span></div></div></article>
+      <article class="tc-card fin d2"><div class="tc-qm">"</div><div class="tc-stars">★★★★★</div><p class="tc-text">"I am MORE than pleased with the services that Mr. Hammonds did for me. He was very knowledgeable and quick to get started on my case. He kept in touch with me to keep me updated as my case progressed and I felt that he truly wanted to help. I would DEFINITELY use his services again, if I need legal counsel."</p><div class="tc-rev"><div class="tc-av">JW</div><div><div class="tc-name">Jack Workman</div><span class="g-badge">✓ Verified Google Review</span></div></div></article>
+      <article class="tc-card fin d1"><div class="tc-qm">"</div><div class="tc-stars">★★★★★</div><p class="tc-text">"Mr. Hammonds is a great lawyer with strong values. He doesn't lie to you or beat around the bush and always tells you what's in your best interests. He is by far the best lawyer around."</p><div class="tc-rev"><div class="tc-av">MG</div><div><div class="tc-name">Michelle Garcia</div><span class="g-badge">✓ Verified Google Review</span></div></div></article>
+    </div>
+    <div class="tc sec-sm">
+      <button class="btn btn-dark btn-lg" onclick="go('contact')">📋 Book a Consultation</button>
+    </div>
+  </div>
+</section>
+${finalCta('Experience the Hammonds Law Difference.','Dedicated attention, responsive communication, and a lawyer who genuinely cares about your outcome.')}
+${footer()}`,
+
+// CONTACT
+contact: ()=>`
+<section class="pg-hero">
+  <div class="wrap"><div class="pg-cnt">
+    <nav class="bc"><a onclick="go('home')">Home</a><span>›</span><span class="cur">Contact</span></nav>
+    <p class="eye eye-l">Get Started</p>
+    <h1>Book a Consultation</h1>
+    <p class="lead">Tell us about your legal inquiry and we'll call you back to schedule an appointment. Please be as detailed as possible. You may also call or email us directly.</p>
+  </div></div>
+</section>
+<section class="sec" style="background:var(--burg-d);">
+  <div class="wrap">
+    <div class="cg">
+      ${cform()}
+      ${cinfo()}
+    </div>
+  </div>
+</section>
+<div style="background:var(--parch);padding:38px 0;">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:9px;color:var(--burg);"><span style="font-size:1.3rem;">🔒</span><div><div style="font-weight:700;font-size:.86rem;">Confidential</div><div style="font-size:.7rem;color:var(--text-l);">Attorney-client privilege</div></div></div>
+      <div style="width:1px;height:34px;background:var(--bdr);"></div>
+      <div style="display:flex;align-items:center;gap:9px;color:var(--burg);"><span style="font-size:1.3rem;">⭐</span><div><div style="font-weight:700;font-size:.86rem;">5-Star Rated</div><div style="font-size:.7rem;color:var(--text-l);">Verified Google Reviews</div></div></div>
+      <div style="width:1px;height:34px;background:var(--bdr);"></div>
+      <div style="display:flex;align-items:center;gap:9px;color:var(--burg);"><span style="font-size:1.3rem;">🎖</span><div><div style="font-weight:700;font-size:.86rem;">Veteran-Led Firm</div><div style="font-size:.7rem;color:var(--text-l);">Iraq War Veteran, U.S. Army</div></div></div>
+      <div style="width:1px;height:34px;background:var(--bdr);"></div>
+      <div style="display:flex;align-items:center;gap:9px;color:var(--burg);"><span style="font-size:1.3rem;">📍</span><div><div style="font-weight:700;font-size:.86rem;">Hurricane, WV</div><div style="font-size:.7rem;color:var(--text-l);">421 Midland Trail</div></div></div>
+    </div>
+  </div>
+</div>
+${footer()}`
+};
+
+// ── ROUTER ────────────────────────────────────────────────
+let cur = 'home';
+function go(page) {
+  if (!PAGES[page]) page = 'home';
+  // close mobile menu
+  document.getElementById('hbg').classList.remove('open');
+  document.getElementById('mob-nav').classList.remove('open');
+  document.body.style.overflow = '';
+  const app = document.getElementById('app');
+  app.classList.add('out');
+  setTimeout(()=>{
+    cur = page;
+    app.innerHTML = PAGES[page]();
+    app.classList.remove('out');
+    window.scrollTo({top:0,behavior:'instant'});
+    initFAQ();
+    initFin();
+    initForm();
+    setNav(page);
+  }, 210);
+}
+
+function setNav(page) {
+  const map = {about:1,'practice-areas':2,'personal-injury':2,'criminal-law':2,'estate-planning':2,'family-law':2,testimonials:3,contact:4};
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('on'));
+  const links = document.querySelectorAll('.nav-links a');
+  const idx = map[page];
+  if (idx !== undefined && links[idx]) links[idx].classList.add('on');
+}
+
+function initFAQ() {
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const on = btn.classList.contains('on');
+      document.querySelectorAll('.faq-q').forEach(b=>{
+        b.classList.remove('on');
+        const a = b.nextElementSibling;
+        if (a) a.classList.remove('open');
+      });
+      if (!on) {
+        btn.classList.add('on');
+        const ans = btn.nextElementSibling;
+        if (ans) ans.classList.add('open');
+      }
+    });
+  });
+}
+
+function initFin() {
+  const els = document.querySelectorAll('.fin');
+  if (!els.length) return;
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if (e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target); }});
+  },{threshold:0.1});
+  els.forEach(el=>obs.observe(el));
+}
+
+function initForm() {
+  const form = document.getElementById('cf');
+  if (!form) return;
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    let valid = true;
+    form.querySelectorAll('.err').forEach(el=>el.classList.remove('err'));
+    form.querySelectorAll('.ferr').forEach(el=>{ el.style.display='none'; el.textContent=''; });
+    const fields = [
+      {id:'fn',msg:'Please enter your first name.'},
+      {id:'ln',msg:'Please enter your last name.'},
+      {id:'ph',msg:'Please enter a valid phone number.',pat:/^[\d\s\-\(\)\+]{7,}$/},
+      {id:'em',msg:'Please enter a valid email.',pat:/^[^\s@]+@[^\s@]+\.[^\s@]+$/},
+      {id:'area',msg:'Please select a practice area.'},
+      {id:'msg',msg:'Please describe your situation.'},
+    ];
+    fields.forEach(f=>{
+      const inp = document.getElementById(f.id);
+      if (!inp) return;
+      const v = inp.value.trim();
+      let err = '';
+      if (!v) err = f.msg;
+      else if (f.pat && !f.pat.test(v)) err = f.msg;
+      if (err) {
+        valid = false;
+        inp.classList.add('err');
+        const em = inp.parentElement.querySelector('.ferr');
+        if (em) { em.textContent=err; em.style.display='block'; }
+      }
+    });
+    if (valid) {
+      const btn = form.querySelector('[type=submit]');
+      btn.disabled = true; btn.textContent = 'Sending…';
+      setTimeout(()=>{
+        form.style.display='none';
+        const ok = document.getElementById('form-ok');
+        if (ok) ok.style.display='block';
+      }, 1100);
+    }
+  });
+  form.querySelectorAll('input,select,textarea').forEach(inp=>{
+    inp.addEventListener('input',()=>{
+      inp.classList.remove('err');
+      const em = inp.parentElement.querySelector('.ferr');
+      if (em) em.style.display='none';
+    });
+  });
+}
+
+// ── SCROLL HEADER ─────────────────────────────────────────
+window.addEventListener('scroll',()=>{
+  document.getElementById('hdr').classList.toggle('scrolled', window.scrollY > 55);
+},{passive:true});
+
+// ── HAMBURGER ─────────────────────────────────────────────
+document.getElementById('hbg').addEventListener('click',function(){
+  const open = this.classList.toggle('open');
+  document.getElementById('mob-nav').classList.toggle('open',open);
+  this.setAttribute('aria-expanded',open);
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+
+// ── BOOT ──────────────────────────────────────────────────
+go('home');
+</script>
+</body>
+</html>
